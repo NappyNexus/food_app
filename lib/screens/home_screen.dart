@@ -6,6 +6,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:food_app/CustomWidgets/food_card.dart';
 import 'package:food_app/CustomWidgets/homepage_banner.dart';
+import 'package:food_app/CustomWidgets/search_bar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -150,41 +151,7 @@ class _HomeScreenState extends State<HomeScreen> {
             //Top Card
             HomepageBanner(),
             //Search Bar
-            Container(
-              height: 60,
-              width: 370,
-              margin: EdgeInsets.only(top: 10),
-              padding: EdgeInsets.symmetric(horizontal: 25),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: Color.fromARGB(255, 238, 238, 238),
-                border: Border.all(
-                  color: Color(0xFFc4c4c4),
-                ),
-              ),
-              child: Row(
-                children: [
-                  Icon(
-                    CupertinoIcons.search,
-                    size: 25,
-                    color: Color(0xFF2b2e3b),
-                  ),
-                  SizedBox(width: 10),
-                  Expanded(
-                    child: TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Search your food...',
-                        border: InputBorder.none,
-                        hintStyle: GoogleFonts.montserrat(
-                          fontSize: 20,
-                          color: Color(0xFFc4c4c4),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            SearchBarWidget(),
             //Food Display
             Container(
               //margin: EdgeInsets.only(top: 0),
