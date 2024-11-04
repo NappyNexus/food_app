@@ -81,9 +81,9 @@ class _LocationFeatureState extends State<LocationFeature> {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "${_currentAddress ?? ""}",
+      _currentAddress ?? "",
       style: GoogleFonts.inconsolata(
-          textStyle: TextStyle(
+          textStyle: const TextStyle(
               fontSize: 20, color: Colors.black, fontWeight: FontWeight.w900)),
     );
   }

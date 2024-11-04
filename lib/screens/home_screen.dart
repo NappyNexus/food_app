@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:food_app/CustomWidgets/food_card.dart';
 import 'package:food_app/CustomWidgets/homepage_banner.dart';
 import 'package:food_app/CustomWidgets/search_bar.dart';
-import 'package:food_app/CustomWidgets/app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,14 +12,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      appBar: TopBarAppBar(),
+      //appBar: TopBarAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             //Top Card
-            HomepageBanner(),
+            const HomepageBanner(),
             //Search Bar
-            SearchBarWidget(),
+            const SearchBarWidget(),
             //Food Display
             Container(
               //margin: EdgeInsets.only(top: 0),
@@ -32,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                     style: GoogleFonts.montserrat(
                         fontSize: 25, fontWeight: FontWeight.w600),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 130,
                   ),
                   TextButton(
@@ -41,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                         style: GoogleFonts.montserrat(
                             fontSize: 15,
                             fontWeight: FontWeight.w600,
-                            color: Color(0xFF7f7f7f)),
+                            color: const Color(0xFF7f7f7f)),
                       ),
                       onPressed: () {})
                 ],

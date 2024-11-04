@@ -13,8 +13,9 @@ class TopBarAppBar extends StatelessWidget {
       elevation: 0,
       toolbarHeight: 60,
       leading: Container(
-        margin: EdgeInsets.only(left: 10),
-        decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+        margin: const EdgeInsets.only(left: 10),
+        decoration:
+            const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
         child: IconButton(
           icon: Image.asset(
             "assets/menu (1).png",
@@ -29,7 +30,8 @@ class TopBarAppBar extends StatelessWidget {
           Text(
             "Location",
             style: GoogleFonts.inconsolata(
-                textStyle: TextStyle(fontSize: 18, color: Color(0xFFc4c4c4))),
+                textStyle:
+                    const TextStyle(fontSize: 18, color: Color(0xFFc4c4c4))),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -45,9 +47,9 @@ class TopBarAppBar extends StatelessWidget {
       ),
       actions: [
         Container(
-          margin: EdgeInsets.only(right: 10),
+          margin: const EdgeInsets.only(right: 10),
           decoration:
-              BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+              const BoxDecoration(color: Colors.white, shape: BoxShape.circle),
           child: IconButton(
             icon: Image.asset(
               "assets/active.png",

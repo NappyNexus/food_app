@@ -9,23 +9,23 @@ class SearchBarWidget extends StatelessWidget {
     return Container(
       height: 60,
       width: 370,
-      margin: EdgeInsets.only(top: 10),
-      padding: EdgeInsets.symmetric(horizontal: 25),
+      margin: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
-        color: Color.fromARGB(255, 238, 238, 238),
+        color: const Color.fromARGB(255, 238, 238, 238),
         border: Border.all(
-          color: Color(0xFFc4c4c4),
+          color: const Color(0xFFc4c4c4),
         ),
       ),
       child: Row(
         children: [
-          Icon(
+          const Icon(
             CupertinoIcons.search,
             size: 25,
             color: Color(0xFF2b2e3b),
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Expanded(
             child: TextField(
               decoration: InputDecoration(
@@ -33,7 +33,7 @@ class SearchBarWidget extends StatelessWidget {
                 border: InputBorder.none,
                 hintStyle: GoogleFonts.montserrat(
                   fontSize: 20,
-                  color: Color(0xFFc4c4c4),
+                  color: const Color(0xFFc4c4c4),
                 ),
               ),
             ),
